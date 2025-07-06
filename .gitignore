@@ -1,0 +1,63 @@
+# Byte-compiled / compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables
+.env
+*.env
+.env.*
+
+# Airflow specific
+airflow.db
+airflow.cfg
+webserver_config.py
+logs/
+dags/__pycache__/
+plugins/__pycache__/
+
+# SQLite database (local Airflow backend)
+*.db
+*.db-journal
+
+# Docker
+docker-compose.override.yml
+.docker/
+.airflow/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# VS Code & IDEs
+.vscode/
+.idea/
+
+# Python virtual environments
+venv/
+.venv/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Pip
+pip-log.txt
+
+# Airflow temporary files
+/tmp/
+__init__.pyc
+
+# Coverage reports
+htmlcov/
+.coverage
+.tox/
+
+# Pytest
+.pytest_cache/
+
+# Airflow config mount if mapped
+config/
+secrets/
+
+# Airflow dags cache in Docker
+dags/*.zip
